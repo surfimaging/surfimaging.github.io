@@ -49,6 +49,33 @@
       margin-top: 1rem;
       font-size: 0.95rem;
     }
+
+    /* Full-width layout for Product Features */
+    #product-features .features {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+    #product-features .feature-box {
+      max-width: 1000px; /* matches your page width */
+      margin: auto;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      overflow: hidden;
+    }
+
+    #product-features .feature-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    #product-features .feature-box h3,
+    #product-features .feature-box p {
+      padding: 1.5rem 2rem;
+    }
   </style>
 </head>
 <body>
@@ -85,30 +112,97 @@
 </section>
   
 <section>
-  <h2>Core Features</h2>
+  <h2>Core Technologies</h2>
   <div class="features">
     <div class="feature-box">
       <h3>🌩️ Cloud-Native Architecture</h3>
-      <p>Fully web-accessible and vendor-neutral. Compatible with Azure, AWS, and Google Cloud for seamless deployment.</p>
+      <p>
+        Fully web-accessible and vendor-neutral. Compatible with Azure, AWS, and Google Cloud for seamless, scalable deployment.
+      </p>
     </div>
     <div class="feature-box">
       <h3>🧠 Integrated AI</h3>
-      <p>Automated organ segmentation, abnormality detection, and disease classification built into your workflow.</p>
+      <p>
+        Automated organ segmentation, abnormality detection, and disease classification built directly into the imaging workflow.
+      </p>
     </div>
     <div class="feature-box">
-      <h3>🩺 Specialized Workflows</h3>
-      <p>Supports standard hanging protocols and advanced workflows in Cardiology, Neurology, Oncology, and a variety of clinical applications.</p>
+      <h3>🩺 Specialized Clinical Workflows</h3>
+      <p>
+        Supports radiology protocols and advanced workflows in cardiology, neurology, oncology, and other specialties.
+      </p>
+    </div>
+    <div class="feature-box">
+      <h3>💻 Zero-Client Accessibility</h3>
+      <p>
+        Work securely from any device, anywhere. All computations and data remain in the cloud—no local downloads or data storage required.
+      </p>
     </div>
     <div class="feature-box">
       <h3>📊 Intelligent Reporting</h3>
-      <p>Multi-modal large language models (vLLMs) enable structured reporting and clinical decision support.</p>
+      <p>
+        Multi-modal large language models (vLLMs) enable structured reporting and clinical decision support.
+      </p>
     </div>
   </div>
 </section>
 
-<section>
-  <h2>Maximum Accessibility</h2>
-  <p>Work from any device, anywhere. Our web-based interface ensures performance and flexibility without compromise.</p>
+<section id="product-features">
+  <h2>Product Features</h2>
+  <p>
+    SurfImaging.ai delivers, from the cloud, advanced visualization and AI-driven insights across the entire radiology workflow. Explore some of our core imaging capabilities below:
+  </p>
+  <p>
+    Our cloud-native architecture ensures that patient data always remains securely on the server or within the trusted cloud environment—no downloads or local copies are ever required. This zero-client design guarantees data privacy, compliance, and performance. With our patent-pending streaming and automation technology, users can access comprehensive imaging tools and AI-assisted analysis in <strong>sub-second response time</strong>—all with a single click on a secure URL.
+  </p>
+
+  <div class="features">
+    <div class="feature-box">
+      <img src="assets/screens/head-and-neck-basic-view.jpg" alt="Head and Neck Basic View" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+      <h3>Basic Radiology View</h3>
+      <p>
+        Provides a complete anatomical overview with intuitive image manipulation, annotation, and measurement tools to support clinical evaluation and planning.
+      </p>
+    </div>
+
+    <div class="feature-box">
+      <img src="assets/screens/total-segmentation-mpr-view.jpg" alt="Total Segmentation MPR View" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+      <h3>Fully Automated Whole-Body Segmentation</h3>
+      <p>SurfImaging develops its own AI models while leveraging open-source frameworks from NVIDIA (MONAI) and Universitätsspital Basel (TotalSegmentator) to deliver advanced AI features that support clinical workflows.</p>
+    </div>
+
+    <div class="feature-box">
+      <img src="assets/screens/aorta-and-left-iliac.jpg" alt="Aorta and Left Iliac" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+      <h3>Fully Automated Aorta and Iliac Analysis</h3>
+      <p>
+        High-resolution vascular visualization with automated detection of vessel lumen paths and diameters at sub-voxel precision, supporting pre-surgical planning and comprehensive vascular assessment.
+      </p>
+    </div>
+
+    <div class="feature-box">
+      <img src="assets/screens/carotid-artery-and-jugular-vein.jpg" alt="Carotid Artery and Jugular Vein" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+      <h3>Fully Automated Carotid Artery and Jugular Vein Analysis</h3>
+      <p>
+        Dual-structure visualization automatically distinguishes arterial and venous anatomy, enabling precise vascular assessment and planning for head-and-neck applications.
+      </p>
+    </div>
+
+    <!-- <div class="feature-box">
+      <img src="assets/screens/coronary-r-pda.jpg" alt="Coronary R-PDA" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+      <h3>Fully Automated Coronary Analysis</h3>
+      <p>
+        High-resolution coronary reconstruction with sub-voxel precision, including the right posterior descending artery (R-PDA), supporting comprehensive cardiac assessment and interventional planning.
+      </p>
+    </div> -->
+
+    <div class="feature-box">
+      <img src="assets/screens/lung-nodules.jpg" alt="Lung Nodules" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+      <h3>Fully Automated Lung Nodule Detection</h3>
+      <p>
+        AI-assisted detection and 3D localization of lung nodules with volumetric measurement, supporting early detection and cancer screening workflows.
+      </p>
+    </div>
+  </div>
 </section>
 
 <footer>
