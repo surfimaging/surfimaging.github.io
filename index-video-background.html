@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Surfimaging.ai</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo-small.svg">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f7fa;
+      color: #333;
+    }
+    header {
+      background-color: #0033ff;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #0a3d62;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .feature-box {
+      background-color: white;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #0033ff;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+    .contact {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+    }
+
+    /* Full-width layout for Product Features */
+    #product-features .features {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+    #product-features .feature-box {
+      max-width: 1000px; /* matches your page width */
+      margin: auto;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      overflow: hidden;
+    }
+
+    #product-features .feature-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    #product-features .feature-box h3,
+    #product-features .feature-box p {
+      padding: 1.5rem 2rem;
+    }
+
+    /* Background video setup */
+    .background-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -2; /* stays behind all content */
+    }
+
+    /* Add a subtle dark gradient overlay to improve text readability */
+    .overlay-content::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.7));
+      z-index: -1;
+    }
+
+    /* Text and layout styling */
+    .overlay-content {
+      position: relative;
+      color: white;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+    }
+
+    .overlay-content header,
+    .overlay-content section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .overlay-content h2 {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255,255,255,0.3);
+      padding-bottom: 0.3rem;
+    }
+    
+  </style>
+</head>
+<body>
+
+<video class="background-video" autoplay muted loop playsinline>
+  <source src="assets/videos/SurfViewBackground.mp4" type="video/mp4">
+</video>
+
+<div class="overlay-content">
+<header>
+  <img src="assets/logo-companyname.svg" alt="SurfImaging.ai Logo" width="100">
+  <h1>SurfImaging.ai</h1>
+  <p>AI-Powered Medical Imaging. Cloud-Driven Performance.</p>
+</header>
+
+<section>
+  <h2>Why SurfImaging?</h2>
+  <p>SurfImaging reduces radiologists’ workload by integrating AI directly into medical imaging workflows. Our cloud-native platform ensures high-performance imaging across compute, storage, and AI services—accessible from any device, anywhere.</p>
+
+  <p>As medical institutions expand remote diagnostics and multi-site collaboration, they increasingly rely on cloud platforms that offer not just scalability, but a deep understanding of clinical realities. Surfimaging.ai enables seamless imaging performance across diverse infrastructures—while helping identify cloud partners who prioritize compliance, continuity, and patient-centered innovation. Through this trusted collaboration, we accelerate deployment, strengthen operational resilience, and foster long-term partnerships that benefit both care delivery and cloud ecosystems.</p>
+</section>
+  
+<section id="team-legacy">
+  <h2>Our Proven Team, Pioneering Again</h2>
+  <p>
+    The founding team at SurfImaging.ai previously developed core imaging technology at Surpassing Technologies Inc., acquired by Microsoft in 2008. That milestone reflects a proven track record in technical innovation and product excellence. Today, the same team applies decades of expertise in imaging, cloud architecture, and AI innovation to advance SurfImaging.ai—delivering resilient, scalable solutions for modern healthcare.
+  </p>
+</section>
+  
+  <section id="rsna2025">
+  <h2>Meet Us at RSNA 2025</h2>
+  <p>
+    SurfImaging will be exhibiting at <strong>RSNA 2025</strong>! Visit us at <strong>Booth #8003</strong> in the <strong>North Hall</strong> to explore our latest innovations in AI-powered medical imaging.
+  </p>
+  <p>
+    📍 <a href="https://rsna2025.mapyourshow.com/8_0/floorplan/?hallID=B&selectedBooth=8003" target="_blank" rel="noopener noreferrer">
+    View our booth on the RSNA 2025 floor plan</a>
+  </p>
+</section>
+  
+<section>
+  <h2>Core Technologies</h2>
+  <div class="features">
+    <div class="feature-box">
+      <h3>🌩️ Cloud-Native Architecture</h3>
+      <p>
+        Fully web-accessible and vendor-neutral. Compatible with Azure, AWS, and Google Cloud for seamless, scalable deployment.
+      </p>
+    </div>
+    <div class="feature-box">
+      <h3>🧠 Integrated AI</h3>
+      <p>
+        Automated organ segmentation, abnormality detection, and disease classification built directly into the imaging workflow.
+      </p>
+    </div>
+    <div class="feature-box">
+      <h3>🩺 Specialized Clinical Workflows</h3>
+      <p>
+        Supports radiology protocols and advanced workflows in cardiology, neurology, oncology, and other specialties.
+      </p>
+    </div>
+    <div class="feature-box">
+      <h3>💻 Zero-Client Accessibility</h3>
+      <p>
+        Work securely from any device, anywhere. All computations and data remain in the cloud—no local downloads or data storage required.
+      </p>
+    </div>
+    <div class="feature-box">
+      <h3>📊 Intelligent Reporting</h3>
+      <p>
+        Multi-modal large language models (vLLMs) enable structured reporting and clinical decision support.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="product-features">
+  <h2>Product Features</h2>
+  <p>
+    SurfImaging.ai delivers, from the cloud, advanced visualization and AI-driven insights across the entire radiology workflow. Explore some of our core imaging capabilities below:
+  </p>
+  <p>
+    Our cloud-native architecture ensures that patient data always remains securely on the server or within the trusted cloud environment—no downloads or local copies are ever required. This zero-client design guarantees data privacy, compliance, and performance. With our patent-pending streaming and automation technology, users can access comprehensive imaging tools and AI-assisted analysis in <strong>sub-second response time</strong>—all with a single click on a secure URL.
+  </p>
+
+  <div class="features">
+    <div class="feature-box">
+      <img src="assets/screens/head-and-neck-basic-view.jpg" alt="Head and Neck Basic View" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+      <h3>Basic Radiology View</h3>
+      <p>
+        Provides a complete anatomical overview with intuitive image manipulation, annotation, and measurement tools to support clinical evaluation and planning.
+      </p>
+    </div>
+
+    <div class="feature-box">
+      <img src="assets/screens/total-segmentation-mpr-view.jpg" alt="Total Segmentation MPR View" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+      <h3>Fully Automated Whole-Body Segmentation</h3>
+      <p>SurfImaging develops its own AI models while leveraging open-source frameworks from NVIDIA (MONAI) and Universitätsspital Basel (TotalSegmentator) to deliver advanced AI features that support clinical workflows.</p>
+    </div>
+
+    <div class="feature-box">
+      <img src="assets/screens/aorta-and-left-iliac.jpg" alt="Aorta and Left Iliac" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+      <h3>Fully Automated Aorta and Iliac Analysis</h3>
+      <p>
+        High-resolution vascular visualization with automated detection of vessel lumen paths and diameters at sub-voxel precision, supporting pre-surgical planning and comprehensive vascular assessment.
+      </p>
+    </div>
+
+    <div class="feature-box">
+      <img src="assets/screens/carotid-artery-and-jugular-vein.jpg" alt="Carotid Artery and Jugular Vein" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+      <h3>Fully Automated Carotid Artery and Jugular Vein Analysis</h3>
+      <p>
+        Dual-structure visualization automatically distinguishes arterial and venous anatomy, enabling precise vascular assessment and planning for head-and-neck applications.
+      </p>
+    </div>
+
+    <div class="feature-box">
+      <img src="assets/screens/coronary-r-pda.jpg" alt="Coronary R-PDA" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+      <h3>Fully Automated Coronary Analysis</h3>
+      <p>
+        High-resolution coronary reconstruction with sub-voxel precision, including the right posterior descending artery (R-PDA), supporting comprehensive cardiac assessment and interventional planning.
+      </p>
+    </div>
+
+    <div class="feature-box">
+      <img src="assets/screens/lung-nodules.jpg" alt="Lung Nodules" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+      <h3>Fully Automated Lung Nodule Detection</h3>
+      <p>
+        AI-assisted detection and 3D localization of lung nodules with volumetric measurement, supporting early detection and cancer screening workflows.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="collaborative-radiology">
+  <h2>Collaborative Radiology — Real-Time Imaging, Together, Anywhere</h2>
+  <p>
+    Experience the next evolution of radiology collaboration. Our cloud-based viewer lets radiologists, clinicians, and patients explore the same medical images live and in sync — seamlessly across PCs, tablets, and phones.
+  </p>
+  <p>
+    No screen sharing. No lag. No setup. Every participant can interact directly — pan, zoom, measure, and annotate — seeing each other’s actions instantly.
+  </p>
+  <p>
+    Beyond image sharing, teams can collaborate on advanced visualization and AI-powered analysis, working together within the same secure, intelligent workspace.
+  </p>
+  <p>
+    This transforms multidisciplinary reviews, remote consultations, and patient discussions — streamlining decisions, improving diagnostic accuracy, and eliminating the workflow friction of traditional image-sharing systems.
+  </p>
+  <p><strong>Smarter teamwork. Faster insights. Better care.</strong></p>
+
+  <div style="text-align:center; margin-top:2rem;">
+    <video id="collabVideo" controls autoplay muted loop playsinline style="max-width:100%; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.2);">
+      <source src="assets/videos/collaborative-radiology-demo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p style="font-style:italic; color:#666; margin-top:0.5rem;">
+      Demonstration: real-time collaboration between clinician (tablet) and radiologist (PC)
+    </p>
+  </div>
+</section>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const video = document.getElementById('collabVideo');
+    if (video) {
+      video.playbackRate = 2.0;
+      video.addEventListener('play', () => { video.playbackRate = 2.0; });
+    }
+  });
+</script>
+
+
+<footer>
+  &copy; 2025 SurfImaging.ai — Empowering Radiology Through AI and Cloud
+  <div class="contact">
+    📍 Kirkland, WA<br>
+    📧 <a href="mailto:innovation@surfimaging.ai" style="color: #ffffff;">innovation@surfimaging.ai</a>
+  </div>
+</footer>
+
+</body>
+</html>
