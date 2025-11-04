@@ -170,6 +170,27 @@
       top: 50%;
       transform: translateY(-50%);
     }
+
+    /* Responsive Navbar for Mobile */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column; /* Stack logo and links vertically */
+        padding: 1rem;
+        align-items: flex-start; /* Align to left for better touch access */
+      }
+      .navbar-links {
+        flex-direction: column; /* Stack links vertically */
+        gap: 1rem; /* Reduce gap for compactness */
+        width: 100%; /* Full width */
+      }
+      .navbar-links li {
+        width: 100%; /* Make each link full-width for easy tapping */
+      }
+      .navbar-links a {
+        display: block; /* Block for full tap area */
+        padding: 0.5rem 0; /* Add padding for touch targets */
+      }
+    }    
   </style>
 </head>
 <body>
