@@ -12,6 +12,8 @@
       padding: 0;
       background-color: #f4f7fa;
       color: #333;
+      font-size: 1.1rem;       /* ↑ from default (~16px → ~18px) */
+      line-height: 1.7;        /* adds breathing room */
     }
     header {
       background-color: #0033ff;
@@ -24,8 +26,24 @@
       max-width: 1000px;
       margin: auto;
     }
+    h1 {
+      font-size: 2.8rem;       /* emphasize brand headline */
+      margin-bottom: 0.5rem;
+    }
+
     h2 {
       color: #0a3d62;
+      font-size: 2rem;         /* stronger section headers */
+      margin-top: 2rem;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      line-height: 1.6;
     }
     .features {
       display: grid;
@@ -43,7 +61,7 @@
       color: white;
       text-align: center;
       padding: 1.5rem;
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
     .contact {
       margin-top: 1rem;
@@ -88,6 +106,10 @@
       background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
       padding: 1rem 2rem;
       font-family: 'Segoe UI', sans-serif;
+    }
+
+    .navbar a {
+      font-size: 1.05rem;
     }
 
     .navbar-logo {
@@ -178,11 +200,15 @@
         padding: 1rem;
         align-items: flex-start; /* Align to left for better touch access */
       }
+
       .navbar-links {
-        flex-direction: column; /* Stack links vertically */
-        gap: 1rem; /* Reduce gap for compactness */
-        width: 100%; /* Full width */
+        display: grid;                /* switch to grid layout */
+        grid-template-columns: 1fr 1fr 1fr; /* 2 columns */
+        gap: 0.0rem 0.0rem;          /* row and column gap */
+        width: 100%;
+        margin-top: 1rem;
       }
+
       .navbar-links li {
         width: 100%; /* Make each link full-width for easy tapping */
       }
@@ -190,7 +216,17 @@
         display: block; /* Block for full tap area */
         padding: 0.5rem 0; /* Add padding for touch targets */
       }
-    }    
+      body {
+        font-size: 1rem;
+      }
+      h1 { font-size: 2.2rem; }      
+    }
+
+    @media (min-width: 1400px) {
+      body {
+        font-size: 1.2rem;
+      }
+    }
   </style>
 </head>
 <body>
