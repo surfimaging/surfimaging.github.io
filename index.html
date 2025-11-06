@@ -191,6 +191,24 @@
       z-index: 1;
       top: 50%;
       transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: center;
+    }
+    
+    .header-content img {
+      margin-bottom: -0.5rem;
+    }
+    
+    .header-content h1 {
+      margin: 0;
+      font-size: 2.4rem;
+    }
+    
+    .header-content p {
+      margin: 0;
+      font-size: 1.2rem;
     }
 
     /* Responsive Navbar for Mobile */
@@ -227,6 +245,30 @@
         font-size: 1.2rem;
       }
     }
+
+    .showcase {
+      margin-top: 3rem;
+    }
+
+    .showcase h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .showcase p {
+      max-width: 800px;
+      margin-bottom: 1.5rem;
+    }
+
+    .video-container {
+      text-align: center;
+    }
+
+    .video-container video {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
   </style>
 </head>
 <body>
@@ -421,12 +463,63 @@
   document.addEventListener('DOMContentLoaded', () => {
     const video = document.getElementById('collabVideo');
     if (video) {
-      video.playbackRate = 2.0;
-      video.addEventListener('play', () => { video.playbackRate = 2.0; });
+      video.playbackRate = 1.0;
+      video.addEventListener('play', () => { video.playbackRate = 1.0; });
     }
   });
 </script>
 
+<hr style="margin:4rem 0; border: none; border-top: 1px solid #ddd;" />
+
+<section id="ai-workflow-showcases">
+  <h2>AI-Driven Radiology Workflow Automation — Showcase</h2>
+  <p>
+    Explore how SurfImaging’s AI automation prepares studies in advance, synchronizes collaboration, and reduces manual setup —
+    enabling faster, clearer, and more confident clinical decision-making.
+  </p>
+</section>
+
+<section class="showcase">
+  <h3>Coronary CT Angiography Review</h3>
+  <p>
+    The system automatically detects coronary centerlines, segments key vessels, and prepares CPR, MPR, and 3D views for immediate review — no manual setup required.
+  </p>
+
+  <div class="video-container">
+    <video controls autoplay muted loop playsinline>
+      <source src="assets/videos/coronary.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
+<section class="showcase">
+  <h3>Lung Nodule Review & Multidisciplinary Consultation</h3>
+  <p>
+    AI detects, measures, characterizes, and tracks pulmonary nodules. Radiologists, oncologists, and patients can join the same review session — remotely and in sync.
+  </p>
+
+  <div class="video-container">
+    <video controls autoplay muted loop playsinline>
+      <source src="assets/videos/lung-nodules.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
+<section class="showcase">
+  <h3>Anatomy Training Session</h3>
+  <p>
+    A curated CT case with organ and structure segmentation allows trainees to interactively explore anatomy in 3D and MPR — guided live by a radiologist or instructor.
+  </p>
+
+  <div class="video-container">
+    <video controls autoplay muted loop playsinline>
+      <source src="assets/videos/anatomy-session.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
 
 <footer>
   &copy; 2025 SurfImaging.ai — Empowering Radiology Through AI and Cloud
